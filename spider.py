@@ -31,7 +31,7 @@ def set_cookie():
 def spider():
     print("~~~~~~~~开始爬取deepmix中文暗网信息！！！~~~~~~~~")
     res = requests.get(url="http://xxxxxxxxxs6qbnahsbvxbghsnqh4rj6whbyblqtnmetf7vell2fmxmad.onion/index.php", headers=header,proxies={"https": "{}://127.0.0.1:{}".format(init.proxy_rules,init.tor_sockets_port),"http":"{}://127.0.0.1:{}".format(init.proxy_rules,init.tor_sockets_port)})
-    # test = open('C:\\Users\\温州大老板\\Desktop\\暗网爬虫.html','w',encoding='utf-8')
+    # test = open('***\\暗网爬虫.html','w',encoding='utf-8')
     # test.write(res.text)
     # test.close()
 
