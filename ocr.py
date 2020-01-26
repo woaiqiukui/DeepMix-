@@ -5,7 +5,7 @@ from PIL import Image
 from collections import defaultdict
 
 # tesseract.exe所在的文件路径
-pytesseract.pytesseract.tesseract_cmd = 'E:\\OCR\\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = '***\\OCR\\tesseract.exe'
 
 # 获取图片中像素点数量最多的像素
 def get_threshold(image):
@@ -82,7 +82,7 @@ def OCR_lmj(img_path):
     out = cut_noise(out)
 
     #保存图片
-    out.save('C:\\Users\\温州大老板\\Desktop\\Verification1.jpg')
+    out.save('***\\Verification1.jpg')
 
     # 仅识别图片中的数字
     #text = pytesseract.image_to_string(out, config='digits')
@@ -97,7 +97,7 @@ def OCR_lmj(img_path):
     return text
 
 def main(image_path):
-    #image_path = 'C:\\Users\\温州大老板\\Desktop\\Verification.jpg'
+    #image_path = '***\\Verification.jpg'
     print("tesseract识别结果为：",OCR_lmj(image_path))
     return (OCR_lmj(image_path))
     
