@@ -55,11 +55,11 @@ def route():                                #在注册前需要访问route.php�
 
 def save_picture(picture_link):                                 #保存验证码图片
     res = requests.get(url=picture_link,headers=header,proxies={"https": "{}://127.0.0.1:{}".format(init.proxy_rules,init.tor_sockets_port),"http":"{}://127.0.0.1:{}".format(init.proxy_rules,init.tor_sockets_port)})
-    file = open('C:\\Users\\温州大老板\\Desktop\\Verification.jpg','wb')
+    file = open('***\\Verification.jpg','wb')
     file.write(res.content)
     file.close()
-    print("[+] 验证码已保存到\"C:\\Users\\温州大老板\\Desktop\\Verification.jpg\"")
-    return ('C:\\Users\\温州大老板\\Desktop\\Verification.jpg')
+    print("[+] 验证码已保存到\"***\\Verification.jpg\"")
+    return ('***\\Verification.jpg')
 
 def Identify(picture_local_link):                                 #通过百度API识别验证码
     APP_ID = '18343289'
